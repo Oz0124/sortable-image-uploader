@@ -1,5 +1,5 @@
 {
-  "name": "image-sort-component-new",
+  "name": "sortable-image-uploader-component-new",
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
