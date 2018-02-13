@@ -1,0 +1,105 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.upload-sort-image {
+  margin: 10px;
+  
+  .upload-image {
+    text-align: center;
+    margin-bottom: 20px;
+    display: none;
+
+    .file-upload-input {
+      display: none;
+    }
+    
+    .upload-button {
+      background-color: #337ab7;
+      border-color: #337ab7;
+      color: #ffffff;
+    }
+  }
+
+  .tile-container {
+    position: relative;
+    padding: 10px;
+    border: 5px dashed #337ab7;
+    min-height: 185px;
+
+    .upload-file-info {
+      font-size: 26px;
+      color: #ccc;
+      text-align: center;
+      height: 26px;
+    }
+
+    .tile-list {
+      width: 100%;
+      height: 100%;
+
+      .upload-button {
+        cursor: pointer;
+
+        div {
+          text-align: center;
+        }
+
+        .upload-button-icon {
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .tile {
+        position: relative;
+        display: inline-block;
+        padding: 0;
+        width: 140px;
+        height: 140px;
+        margin: 5px;
+        background-color: #f0f0f0;
+        // border-radius: 5px;
+        vertical-align: top;
+
+        &.upload-button {
+          text-align: center;
+          font-size: 16px;
+          padding-top: 42px;
+          color: #000000;
+        }
+
+        .tile-image {
+          width: 140px;
+          height: 140px;
+          text-align: center;
+          background-size: cover;
+          cursor: move;
+        }
+
+        .tile-bottom {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 30px;
+          padding: 5px;
+          background-color: rgba(0, 0, 0, 0.5);
+          // border-top: 1px solid #ffffff;
+
+          .tile-index {
+            float: left;
+            color: #ffffff;
+          }
+          .tile-delete-button {
+            float: right;
+            cursor: pointer;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

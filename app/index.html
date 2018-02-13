@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sortable Image Uploader Example</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Sortable Image Uploader Example</h1>
+            </div>
+            <div class="jumbotron">
+                <p>Sortable Image Uploader元件功能說明:</p>
+                <p>此元件提供上傳圖檔與排列圖片順序功能，目前尚未串接API，因此圖片僅在local端排序顯示。</p>
+                <p>Sortable Image Uploader元件使用說明:</p>
+                <ol>
+                    <li>
+                        請點擊上傳圖檔，或拖曳圖檔入虛線中，開始上傳圖檔
+                    </li>
+                    <li>
+                        可拖曳圖片項目，調整順序
+                    </li>
+                    <li>
+                        若想刪除圖片，可點擊垃圾桶圖示刪除
+                    </li>
+                </ol>
+            </div>
+            <div class="upload-sort-image upload-product-image">
+                
+            </div> 
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <button class="btn btn-default get-sort-array">取得檔案順序</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <script src="/bower_components/Sortable/Sortable.js"></script>
+        <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
+        <script src="/bower_components/blueimp-file-upload/js/jquery.fileupload.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+    
+        <!-- build:js scripts/plugins.js -->
+        
+        <!-- endbuild -->
+    
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

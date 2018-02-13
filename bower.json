@@ -1,0 +1,23 @@
+{
+  "name": "image-sort-component-new",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "Sortable": "sortablejs#^1.6.0",
+    "jquery-ui": "^1.12.1",
+    "blueimp-file-upload": "jQuery-File-Upload#^9.20.0"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1"
+  }
+}
