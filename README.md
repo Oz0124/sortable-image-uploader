@@ -1,7 +1,8 @@
 # Sortable-Image-Uploader
 
-This is a simple application to browse your Google Drive files.
-Built entirely to learn Ember.js framework and Google Drive API.
+This is a Sortable image uploader component.
+
+[Demo](https://eroded-hospital.000webhostapp.com/)
 
 ## Prerequisites
 
