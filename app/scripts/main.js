@@ -124,15 +124,36 @@ OO.Modules.ImageSortComponent = (function() {
 
 		// create sortable
 		let element = tileList.get(0);
+		let preOrder = [];
 		let sortable = Sortable.create(element, {
 			handle: '.tile-image',
 			filter: '.ignore-element',
 			dataIdAttr: 'data-id',
+			preventOnFilter: false,
+			onChoose: function (evt) {
+				console.log('onChoose');
+				console.log(evt);
+				// 紀錄移動前的順序，以便之後回復
+				if (sortable.toArray) {
+					preOrder = sortable.toArray();
+				}
+			},
+			onEnd: function (evt) {
+				console.log('onEnd');
+				console.log(evt);
+			},			
 			onSort: function (evt) {
+				// 如果拖動到上傳圖檔tile之前，就回復先前順序
+				if (evt.newIndex === 0) {
+					if (sortable.sort) {
+						sortable.sort(preOrder);						
+					}
+				}		
+
 				// 更新順序編號
 				$.each(tileList.find('.tile'), function (index, item) {
 					$(item).find('.tile-index').text(index + '');
-				});
+				});		
 			}
 
 		});
@@ -167,6 +188,7 @@ OO.Modules.ImageSortComponent = (function() {
 	
 	// test
 	$('body').on('click', '.get-sort-array', function () {
+		console.log(OO.Modules.ImageSortComponent.getSortArray());
 		alert(JSON.stringify(OO.Modules.ImageSortComponent.getSortArray()));
 	});
 	
