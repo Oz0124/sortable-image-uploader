@@ -5,7 +5,7 @@ This is a Sortable image uploader component.
 
 [Demo](https://eroded-hospital.000webhostapp.com/)
 
-[Demo 1](https://oz0124-demo-suic.pancakeapps.com/Sortable-and-Upload-Image-Component/)
+[Demo 1](https://oz0124-demo.pancakeapps.com/Sortable-and-Upload-Image-Component/)
 
 
 ## Prerequisites
