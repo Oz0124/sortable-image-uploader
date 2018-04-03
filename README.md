@@ -3,10 +3,9 @@
 
 This is a Sortable image uploader component.
 
-[Demo](https://eroded-hospital.000webhostapp.com/)
+[Demo](https://oz0124.github.io/sortable-image-uploader/)
 
-[Demo 1](https://oz0124.github.io/sortable-image-uploader/)
-
+[Demo 1](https://eroded-hospital.000webhostapp.com/)
 
 ## Prerequisites
 
